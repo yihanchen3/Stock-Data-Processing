@@ -1,0 +1,14 @@
+import pandas as pd
+import yfinance as yf
+from datetime import datetime, timedelta
+
+# Check which companies' data is available on Yahoo Finance at t2
+def check_yahoo_availability(ticker, date, t2):
+    try:
+        data = yf.Ticker(ticker).history(start=t2, end=date)
+        latest_date = data.index[-1]
+        # print(ticker,latest_date)
+        return latest_date
+    except:
+        # print('false',ticker)
+        return None
