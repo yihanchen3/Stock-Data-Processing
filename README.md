@@ -1,4 +1,4 @@
-# Stock Data Analysis
+# Data processing, visualization and forecasting on Financial data.
 
 This project contains a main Jupyter notebook `SPAC_data.ipynb` that performs various data analysis and forecasting on stock data and a short Jupyter notebook `GDP_visualization.ipynb	` that processes and visualizes GDP data using various plotting techniques.
 
